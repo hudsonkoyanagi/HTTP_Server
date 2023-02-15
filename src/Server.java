@@ -2,9 +2,7 @@ import java.io.*;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
+
 
 public class Server {
     public static int PORT = 8080;
@@ -27,6 +25,8 @@ public class Server {
             int __ = dis.read(buffer, 0, 1024);
             HTTPRequest formattedRequest = new HTTPRequest(buffer);
             Utils.log(formattedRequest.getFilepath());
+
+
 
             byte[] fileOutBytes = new byte[1024];
             File f = new File(SRC_DIR + formattedRequest.getFilepath());
