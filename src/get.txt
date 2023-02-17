@@ -1,0 +1,7 @@
+GET /index.html HTTP/1.1
+User-Agent: PostmanRuntime/7.31.0
+Accept: */*
+Postman-Token: e7a90bdc-ca2c-4850-8af2-37e6109a2a6d
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive

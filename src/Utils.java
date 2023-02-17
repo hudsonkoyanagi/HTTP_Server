@@ -33,8 +33,10 @@ public class Utils {
             logBr();
             String str = s + " starting up...";
             int len = str.length();
-            System.out.println("|||| " +  nSpaces((55 - len + (len%2))/2 ) + str + nSpaces((55 - len)/2) +  " ||||");
+            System.out.println("|||| " +  nSpaces((55 - len + (len%2))/2 ) + str + nSpaces((55 - len)/2 + 1) +  " ||||");
             logBr();
         }
     }
+
+
 }
